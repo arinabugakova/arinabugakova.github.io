@@ -2,6 +2,7 @@
 
 * 
     font-family: 'Inter', sans-serif
+    box-sizing: border-box
     margin: 0
     padding: 0
 
@@ -13,3 +14,48 @@
         font-size: 30px
         line-height: 36px
         color: #303247
+
+.loans
+    padding: 32px 0 32px 64px
+    &__wrapper 
+        display: grid
+        grid-template: repeat(3, 134px)/ 0.5fr
+        row-gap: 32px
+    &__item
+        border: 1px solid rgba(48, 50, 71, 0.1)
+        border-radius: 15px
+        display: flex
+        justify-content: space-between
+        padding: 32px
+    .item 
+        &-name 
+            font-weight: 600
+            font-size: 25px
+            line-height: 30px
+            color: #303247
+        &-descr
+            margin-top: 14px
+            font-weight: 400
+            font-size: 20px
+            line-height: 24px
+            color: #303247
+
+.btn 
+    &_invest
+        margin-top: 14px
+        padding: 16px 32px
+        width: 137px
+        height: 56px
+        left: 507px
+        top: 46px
+        background: #F7E308
+        border-radius: 5px
+        font-weight: 500
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+        color: #303247
+        border: none
+
+            
+            
