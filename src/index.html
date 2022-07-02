@@ -16,37 +16,54 @@
         <section class="loans">
             <div class="loans__wrapper">
                 <div class="loans__item">
+                    <div class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div class="item-name">Loan name 1</div>
-                        <div class="item-descr">Loan details and values</div>
+                        <div id="1" class="item-name first"></div>
+                        <div class="item-descr first"></div>
                     </div>
-                        <button class="btn_invest">invest</button>
+                        <button data-modal class="btn_invest">invest</button>
                 </div>
-                <div class="loans__item">
+                <div  class="loans__item">
+                    <div class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div class="item-name">Loan name 1</div>
-                        <div class="item-descr">Loan details and values</div>
+                        <div id="5" class="item-name second"></div>
+                        <div class="item-descr second"></div>
                     </div>
-                        <button class="btn_invest">invest</button>
+                        <button data-modal class="btn_invest">invest</button>
                 </div>
-                <div class="loans__item">
+                <div  class="loans__item">
+                    <div class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div class="item-name">Loan name 1</div>
-                        <div class="item-descr">Loan details and values</div>
+                        <div id="12" class="item-name third"></div>
+                        <div class="item-descr third"></div>
                     </div>
-                        <button class="btn_invest">invest</button>
+                        <button data-modal class="btn_invest">invest</button>
                 </div>
                 <div class="investment">
                     <div class="investment__wrapper">
                         <div class="investment-text">Total amount available for investment:</div>
-                        <div class="investment-amount">$238,456</div>
+                        <div  class="investment-amount">$238,456</div>
                     </div>
                 </div>
             </div>
         </section>
 
-        
+        <div class="modal">
+            <div class="modal__dialog">
+                <div data-close class="modal__close">&times;</div>
+                <div class="modal__subtitle">Invest in Loan</div>
+                    <div class="modal__loan-title">Loan title you’ve clicked</div>
+                    <div class="modal__available">Amount available: <span>$12,362</span></div>
+                    <div class="modal__timer">Loan ends in: <span>1 month 10 days</span></div>
+                    <form class="feed-form" action="#">
+                        <div class="modal__invest-amount">Investment amount</div>
+                        <input class="modal__input" name="amount" placeholder="1,000" type="number">
+                        <button data-invested class="btn_invest">invest</button>
+                    </form>
+                </div>
+                </div>
 
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
