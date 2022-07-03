@@ -1,0 +1,72 @@
+.modal
+    display: none
+    z-index: 1050
+    position: fixed
+    width: 100%
+    height: 100%
+    overflow: hidden
+    top: 0
+    background-color: rgba(26, 26, 26, 0.8)
+    &__dialog
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 627px
+        min-height: 499px
+        background: #FFFFFF
+        border-radius: 5px;
+        padding: 64px
+    &__close
+        position: absolute
+        padding: 40px 
+        top: 0
+        right: 0
+        font-size: 32px
+        line-height: 21px
+        color: #303247
+        cursor: pointer
+    &__subtitle
+        font-weight: 600
+        font-size: 35px
+        line-height: 42px
+        color: #303247
+    &__loan
+        &-title
+            padding-top: 32px
+            font-weight: 400
+            font-size: 20px
+            line-height: 24px
+            color: #303247
+    
+    &__timer, &__available
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        color: #303247
+        padding-top: 8px
+    &__invest-amount
+        padding-top: 64px
+        font-weight: 600
+        font-size: 30px
+        line-height: 36px
+        color: #303247
+    &__input
+        margin-top: 30px
+        margin-right: 32px
+        width: 320px
+        height: 56px
+        border: 1px solid rgba(48, 50, 71, 0.1)
+        border-radius: 5px
+        font-weight: 400
+        font-size: 20px
+        line-height: 24px
+        text-align: right
+        padding-right: 30px
+
+.show
+    display: block
+.hide
+    display: none
+
+
