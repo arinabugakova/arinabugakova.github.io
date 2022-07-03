@@ -18,26 +18,26 @@
                 <div class="loans__item">
                     <div data-invested-1 class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div id="1" class="item-name first"></div>
-                        <div class="item-descr first">Tranche: <span></span> <br> Ltv: <span1></span1> </div>
+                        <div class="item-name first"></div>
+                        <div class="item-descr first">Available: <span></span> <br> Ltv: <span1></span1> </div>
                     </div>
-                        <button data-modal-1 class="btn_invest">invest</button>
+                        <button data-btn-1 class="btn_invest">invest</button>
                 </div>
                 <div  class="loans__item">
                     <div data-invested-2 class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div id="5" class="item-name second"></div>
-                        <div class="item-descr second">Tranche: <span></span> <br> Ltv: <span1></span1> </div>
+                        <div class="item-name second"></div>
+                        <div class="item-descr second">Available: <span></span> <br> Ltv: <span1></span1> </div>
                     </div>
-                        <button data-modal-2 class="btn_invest">invest</button>
+                        <button data-btn-2 class="btn_invest">invest</button>
                 </div>
                 <div  class="loans__item">
                     <div data-invested-3 class="invested hide">Invested</div>
                     <div class="item__content">
-                        <div id="12" class="item-name third"></div>
-                        <div class="item-descr third">Tranche: <span></span> <br> Ltv: <span1></span1> </div>
+                        <div class="item-name third"></div>
+                        <div class="item-descr third">Available: <span></span> <br> Ltv: <span1></span1> </div>
                     </div>
-                        <button data-modal-3 class="btn_invest">invest</button>
+                        <button data-btn-3 class="btn_invest">invest</button>
                 </div>
                 <div class="investment">
                     <div class="investment__wrapper">
@@ -48,17 +48,47 @@
             </div>
         </section>
 
-        <div class="modal">
+        <div data-modal-1 class="modal hide">
             <div class="modal__dialog">
-                <div data-close class="modal__close">&times;</div>
+                <div data-close-1 class="modal__close">&times;</div>
                 <div class="modal__subtitle">Invest in Loan</div>
-                    <div class="modal__loan-title"></div>
-                    <div class="modal__available">Amount available: <span></span></div>
-                    <div class="modal__timer">Loan ends in: <span></span></div>
+                    <div class="modal__loan-title modal__loan-title-first"></div>
+                    <div class="modal__available modal__available-1">Amount available: <span></span></div>
+                    <div class="modal__timer modal__timer-1">Loan ends in: <span></span></div>
                     <form class="feed-form" action="#">
                         <div class="modal__invest-amount">Investment amount</div>
-                        <input class="modal__input" name="amount" placeholder="1,000" type="number">
-                        <button data-invested class="btn_invest">invest</button>
+                        <input  class="modal__input" required name="amount" placeholder="1,000" type="number">
+                        <button data-investbtn-1 class="btn_invest">invest</button>
+                    </form>
+                </div>
+                </div>
+
+        <div data-modal-2 class="modal hide">
+            <div class="modal__dialog">
+                <div data-close-2 class="modal__close">&times;</div>
+                <div class="modal__subtitle">Invest in Loan</div>
+                    <div class="modal__loan-title modal__loan-title-second"></div>
+                    <div class="modal__available modal__available-2">Amount available: <span></span></div>
+                    <div class="modal__timer modal__timer-2">Loan ends in: <span></span></div>
+                    <form class="feed-form" action="#">
+                        <div class="modal__invest-amount">Investment amount</div>
+                        <input class="modal__input" required name="amount" placeholder="1,000" type="number">
+                        <button data-investbtn-2 class="btn_invest">invest</button>
+                    </form>
+                </div>
+                </div>
+
+        <div data-modal-3 class="modal hide">
+            <div class="modal__dialog">
+                <div data-close-3 class="modal__close">&times;</div>
+                <div class="modal__subtitle">Invest in Loan</div>
+                    <div class="modal__loan-title modal__loan-title-third"></div>
+                    <div class="modal__available modal__available-3">Amount available: <span></span></div>
+                    <div class="modal__timer modal__timer-3">Loan ends in: <span></span></div>
+                    <form class="feed-form" action="#">
+                        <div class="modal__invest-amount">Investment amount</div>
+                        <input class="modal__input" required name="amount" placeholder="1,000" type="number">
+                        <button data-investbtn-3 class="btn_invest">invest</button>
                     </form>
                 </div>
                 </div>
